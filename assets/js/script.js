@@ -42,7 +42,7 @@ $(document).ready(function() {
                 <div class="member-details">
                     <h2 class="text-xl font-semibold member-name">${member.name}</h2>
                     <p class="text-gray-200">Tanggal: ${formatDate(member.endDate)}</span></p>
-                    <a href="${member.newsURL}" class="news-button underline">Berita</a>
+                    <a href="${member.newsURL}" target="_blank" class="news-button underline">Berita</a>
                     <a href="${member.resultURL}" target="_blank" class="news-button underline">Hasil</a>
                 </div>
             </div>
