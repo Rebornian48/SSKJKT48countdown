@@ -3,22 +3,22 @@ $(document).ready(function() {
         { 
             name: 'Pengumuman Pertama',
             endDate: '2024-09-28T21:00:00+07:00',
-            hasil: '#'
+            newsURL: '#'
         },
         { 
             name: 'STS Jessica Chandra (rill kah?)',
             endDate: '2024-09-29T19:00:00+07:00',
-            hasil: '#'
+            newsURL: '#'
         },
         { 
             name: 'Pengumuman Kedua*',
             endDate: '2024-10-31T21:00:00+07:00',
-            hasil: '#'
+            newsURL: '#'
         },
         { 
             name: 'Pengumuman Final',
             endDate: '2024-12-15T21:00:00+07:00',
-            hasil: '#'
+            newsURL: '#'
         },
     ];
 
@@ -38,7 +38,7 @@ $(document).ready(function() {
                 <div class="member-details">
                     <h2 class="text-xl font-semibold member-name">${member.name}</h2>
                     <p class="text-gray-200">Tanggal: ${formatDate(member.endDate)}</span></p>
-                    <a href="${member.newsURL}" target="_blank" class="news-button underline">Hasil</a>
+                    <a href="${member.newsURL}" class="news-button underline">Hasil</a>
                 </div>
             </div>
             <div class="countdown-timer-container">
