@@ -7,12 +7,6 @@ $(document).ready(function() {
             resultURL: '#'
         },
         { 
-            name: 'STS Jessica Chandra (rill kah?)',
-            endDate: '2024-09-29T19:00:00+07:00',
-            newsURL: '#',
-            resultURL: './sts/'
-        },
-        { 
             name: 'Pengumuman Kedua*',
             endDate: '2024-10-31T21:00:00+07:00',
             newsURL: 'https://ssk.jkt48.com/2024/id',
