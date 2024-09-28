@@ -4,22 +4,19 @@ $(document).ready(function() {
             name: 'Pengumuman Pertama',
             endDate: '2024-09-28T21:00:00+07:00',
             newsURL: 'https://jkt48.com/news/detail/id/1839?lang=id',
-            resultsURL: './s1/',
-            resultuURL: './u1/'
+            resultsURL: './tahap1/'
         },
         { 
             name: 'Pengumuman Kedua*',
             endDate: '2024-10-31T21:00:00+07:00',
             newsURL: 'https://ssk.jkt48.com/2024/id',
-            resultsURL: '#',
-            resultuURL: '#'
+            resultsURL: '#'
         },
         { 
             name: 'Pengumuman Final',
             endDate: '2024-12-15T21:00:00+07:00',
             newsURL: 'https://ssk.jkt48.com/2024/id',
-            resultsURL: '#',
-            resultuURL: '#'
+            resultsURL: '#'
         },
     ];
 
@@ -40,8 +37,7 @@ $(document).ready(function() {
                     <h2 class="text-xl font-semibold member-name">${member.name}</h2>
                     <p class="text-gray-200">Tanggal: ${formatDate(member.endDate)}</span></p>
                     <a href="${member.newsURL}" target="_blank" class="news-button underline">Berita</a>
-                    <a href="${member.resultsURL}" target="_blank" class="news-button underline">Hasil (Peringkat 1-12)</a>
-                    <a href="${member.resultuURL}" target="_blank" class="news-button underline">Hasil (Peringkat 13-24)</a>
+                    <a href="${member.resultsURL}" target="_blank" class="news-button underline">Hasil</a>
                 </div>
             </div>
             <div class="countdown-timer-container">
