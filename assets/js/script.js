@@ -4,13 +4,15 @@ $(document).ready(function() {
             name: 'Pengumuman Pertama',
             endDate: '2024-09-28T21:00:00+07:00',
             newsURL: 'https://jkt48.com/news/detail/id/1839?lang=id',
-            resultsURL: './tahap1/'
+            resultsURL: './tahap1/',
+            results2URL: 'https://ssk.jkt48.com/2024/id/1st-pre-result'
         },
         { 
             name: 'Pengumuman Kedua*',
             endDate: '2024-10-31T21:00:00+07:00',
             newsURL: 'https://ssk.jkt48.com/2024/id',
-            resultsURL: '#'
+            resultsURL: './tahap2/',
+            results2URL: 'https://ssk.jkt48.com/2024/id/2nd-pre-result'
         },
         { 
             name: 'Pengumuman Final',
@@ -38,6 +40,7 @@ $(document).ready(function() {
                     <p class="text-gray-200">Tanggal: ${formatDate(member.endDate)}</span></p>
                     <a href="${member.newsURL}" target="_blank" class="news-button underline">Berita</a>
                     <a href="${member.resultsURL}" target="_blank" class="news-button underline">Hasil</a>
+                    <a href="${member.results2URL}" target="_blank" class="news-button underline">Hasil (Official JKT48)</a>
                 </div>
             </div>
             <div class="countdown-timer-container">
