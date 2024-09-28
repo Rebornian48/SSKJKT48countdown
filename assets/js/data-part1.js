@@ -1,4 +1,6 @@
-new Chart(document.getElementById("senbatsu"), {
+const ctx = document.getElementById("senbatsu");
+Chart.register(ChartDataLabels);
+new Chart(ctx, {
   type: "bar",
   data: {
     labels: [
@@ -33,6 +35,17 @@ new Chart(document.getElementById("senbatsu"), {
           color: "white",
         },
       },
+      datalabels: {
+        anchor: "end", // Position of the labels (start, end, center, etc.)
+        align: "end", // Alignment of the labels (start, end, center, etc.)
+        color: "white", // Color of the labels
+        font: {
+          weight: "bold",
+        },
+        formatter: function (value, ctx) {
+          return value; // Display the actual data value
+        },
+      },
     },
     indexAxis: "y",
     scales: {
@@ -55,12 +68,14 @@ new Chart(document.getElementById("senbatsu"), {
   },
 });
 
-new Chart(document.getElementById("undergirls"), {
+const ctx1 = document.getElementById("undergirls");
+Chart.register(ChartDataLabels);
+new Chart(ctx1, {
   type: "bar",
   data: {
     labels: [
       "Aurellia (Lia)",
-      "Flora Shafiq (Flora",
+      "Flora Shafiq (Flora)",
       "Greesella Adhalia (Greesel)",
       "Helisma Putri (Eli)",
       "Kathrina Irene (Kathrin)",
@@ -84,6 +99,17 @@ new Chart(document.getElementById("undergirls"), {
   },
   options: {
     plugins: {
+      datalabels: {
+        anchor: "end", // Position of the labels (start, end, center, etc.)
+        align: "end", // Alignment of the labels (start, end, center, etc.)
+        color: "white", // Color of the labels
+        font: {
+          weight: "bold",
+        },
+        formatter: function (value, ctx1) {
+          return value; // Display the actual data value
+        },
+      },
       // 'legend' now within object 'plugins {}'
       legend: {
         labels: {
