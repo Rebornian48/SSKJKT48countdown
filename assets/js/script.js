@@ -4,19 +4,22 @@ $(document).ready(function() {
             name: 'Pengumuman Pertama',
             endDate: '2024-09-28T21:00:00+07:00',
             newsURL: 'https://jkt48.com/news/detail/id/1839?lang=id',
-            resultURL: '#'
+            resultsURL: './s1/',
+            resultuURL: './u1/'
         },
         { 
             name: 'Pengumuman Kedua*',
             endDate: '2024-10-31T21:00:00+07:00',
             newsURL: 'https://ssk.jkt48.com/2024/id',
-            resultURL: '#'
+            resultsURL: '#',
+            resultuURL: '#'
         },
         { 
             name: 'Pengumuman Final',
             endDate: '2024-12-15T21:00:00+07:00',
             newsURL: 'https://ssk.jkt48.com/2024/id',
-            resultURL: '#'
+            resultsURL: '#',
+            resultuURL: '#'
         },
     ];
 
@@ -37,7 +40,8 @@ $(document).ready(function() {
                     <h2 class="text-xl font-semibold member-name">${member.name}</h2>
                     <p class="text-gray-200">Tanggal: ${formatDate(member.endDate)}</span></p>
                     <a href="${member.newsURL}" target="_blank" class="news-button underline">Berita</a>
-                    <a href="${member.resultURL}" target="_blank" class="news-button underline">Hasil</a>
+                    <a href="${member.resultsURL}" target="_blank" class="news-button underline">Hasil (Peringkat 1-12)</a>
+                    <a href="${member.resultuURL}" target="_blank" class="news-button underline">Hasil (Peringkat 13-24)</a>
                 </div>
             </div>
             <div class="countdown-timer-container">
@@ -53,7 +57,7 @@ $(document).ready(function() {
 
             if (distance <= 0) {
                 clearInterval(countdownInterval);
-                document.getElementById(`countdown-${member.name}`).innerText = "Pengumuman hasil telah keluar!";
+                document.getElementById(`countdown-${member.name}`).innerText = "Hasil telah keluar!";
             } else {
                 const days = Math.floor(distance / (1000 * 60 * 60 * 24));
                 const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
