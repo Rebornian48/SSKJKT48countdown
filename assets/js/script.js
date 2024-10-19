@@ -8,17 +8,18 @@ $(document).ready(function() {
             results2URL: 'https://ssk.jkt48.com/2024/id/1st-pre-result'
         },
         { 
-            name: 'Pengumuman Kedua*',
+            name: 'Pengumuman Kedua',
             endDate: '2024-10-31T21:00:00+07:00',
-            newsURL: 'https://ssk.jkt48.com/2024/id',
+            newsURL: 'hhttps://jkt48.com/news/detail/id/1851?lang=id',
             resultsURL: './tahap2/',
             results2URL: 'https://ssk.jkt48.com/2024/id/2nd-pre-result'
         },
         { 
             name: 'Pengumuman Final',
             endDate: '2024-12-15T21:00:00+07:00',
-            newsURL: 'https://ssk.jkt48.com/2024/id',
-            resultsURL: '#'
+            newsURL: 'https://jkt48.com/news/detail/id/1849?lang=id',
+            resultsURL: '#',
+            results2URL: '#'
         },
     ];
 
