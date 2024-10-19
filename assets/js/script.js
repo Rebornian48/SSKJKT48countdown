@@ -10,7 +10,7 @@ $(document).ready(function() {
         { 
             name: 'Pengumuman Kedua',
             endDate: '2024-10-31T21:00:00+07:00',
-            newsURL: 'hhttps://jkt48.com/news/detail/id/1851?lang=id',
+            newsURL: 'https://jkt48.com/news/detail/id/1851?lang=id',
             resultsURL: './tahap2/',
             results2URL: 'https://ssk.jkt48.com/2024/id/2nd-pre-result'
         },
